@@ -1,0 +1,16 @@
+{
+  "name": "howdy-nodejs",
+  "version": "1.0.0",
+  "description": "howdy nodejs for cloud foundry",
+  "main": "howdy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "corbs",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.15.4"
+  }
+}
