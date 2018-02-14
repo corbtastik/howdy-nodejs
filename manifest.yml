@@ -1,7 +1,7 @@
 ---
 applications:
 - name: howdy-nodejs
-  random-route: true
+  host: howdy-nodejs
   memory: 512MB
   buildpack: nodejs_buildpack
   command: node howdy.js
