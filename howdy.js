@@ -11,7 +11,9 @@ app.get('/howdy', function(req, res) {
 })
 
 app.post('/echo', function(req, res) {
-    console.log(req.body);
+    var body = req.body;
+    console.log(body);
+    res.send(body);
 })
 
 app.post('/crypto/aes/encrypt/:key', function(req, res) {
