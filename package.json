@@ -8,5 +8,8 @@
   "dependencies": {
     "cfenv" : "^1.0.4",
     "express": "^4.16.0"
-  }
+  },
+  "engines": {
+    "node" : "^4.8.7"
+  }  
 }
