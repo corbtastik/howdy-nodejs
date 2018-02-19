@@ -9,9 +9,9 @@ An example Node.js app on Cloud Foundry.  Uses the [cfenv](https://github.com/cl
 3. [Node.js](https://nodejs.org/en/download/)
 4. [HTTPie](https://httpie.org) is a nice cli tool and used below
 
-### Login to Cloud Foundry
+### Login to Cloud Foundry (pws shown)
 
-1. ``cf login -a api.run.pivotal.io`` to login to PWS
+1. ``cf login -a api.run.pivotal.io``
 
 ### Clone and Push
 
@@ -64,5 +64,18 @@ Returns information about the [Application Environment](https://docs.run.pivotal
     "urls": [
         "https://howdy-nodejs.cfapps.io"
     ]
+}
+```
+
+2. ``http POST howdy-nodejs.cfapps.io/echo movie="Nacho Libre" director="Jared Hess" starring="Jack Black" year:=2006``
+
+Echos the request body as the response.  For example...
+
+```json
+{
+    "director": "Jared Hess",
+    "movie": "Nacho Libre",
+    "starring": "Jack Black",
+    "year": 2006
 }
 ```
